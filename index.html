@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amrita Ranjan</title>
+    <link rel="icon" type="image/jpeg" href="/assets/code1.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="ambient">
+      <span class="orb orb--one"></span>
+      <span class="orb orb--two"></span>
+      <span class="orb orb--three"></span>
+    </div>
+
+    <header class="site-header" data-animate>
+      <div class="logo">Amrita Ranjan | Personal<span>folio</span></div>
+      <nav class="site-nav">
+        <a href="#work">📁 Works</a>
+        <a href="#experience">💼 Experiences</a>
+        <a href="#skills">⚙️ Skills</a>
+        <a href="#contact">📧 Contact</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu">Menu</button>
+    </header>
+
+    <main>
+      <section class="hero" id="top" data-section>
+        <div class="hero-text" data-animate>
+          <div class="hero-main" data-animate>
+            <div class="hero-identity">
+              <div class="profile-photo">
+                <img id="profilePhoto" src="" alt="Profile photo" />
+              </div>
+              <div class="hero-title">
+                <h1 id="profileName"></h1>
+                <h2 id="profileRole"></h2>
+              </div>
+            </div>
+            <p class="tagline" id="profileTagline"></p>
+            <p class="summary" id="profileSummary"></p>
+            <div class="meta">
+              <span id="profileLocation"></span>
+            </div>
+            <div class="hero-actions">
+              <a class="button" href="#contact">🚀 Let's collaborate</a>
+              <a class="button ghost" id="downloadResume" href="javascript:void(0);">📄 Download Resume</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card" data-animate>
+          <h3>📊 Focus Snapshot</h3>
+          <p>High signal product developer and full-stack execution for teams shipping on deadlines.</p>
+          <div class="stats" id="stats"></div>
+        </div>
+      </section>
+
+      <section class="section split" id="highlights" data-section>
+        <div class="section-title" data-animate>
+          <h2>⭐ Impact highlights</h2>
+          <p>Proof of velocity, scale, and measurable lifts.</p>
+        </div>
+        <div class="highlight-panel" data-animate>
+          <ul class="highlight-list" id="highlightsList"></ul>
+          <button class="button ghost highlight-more" id="highlightsMore" type="button" hidden>
+            🚀 Amazing stuffs ahead
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="work" data-section>
+        <div class="section-title" data-animate>
+          <h2>✨ Selected works</h2>
+          <p>Launches that blended product strategy, motion, and engineering craftsmanship.</p>
+        </div>
+        <div class="cards" id="projectsGrid" data-animate></div>
+      </section>
+
+      <section class="section" id="experience" data-section>
+        <div class="section-title" data-animate>
+          <h2>🏃 Experiences</h2>
+          <p>Cross-functional leadership across Cross-functional softwares and data products.</p>
+        </div>
+        <div class="timeline" id="experienceTimeline" data-animate></div>
+      </section>
+
+      <section class="section split" id="skills" data-section>
+        <div class="section-title" data-animate>
+          <h2>🔧 Capabilities</h2>
+          <p>Built for scale, experimentation, and measurable outcomes.</p>
+        </div>
+        <div class="pill-grid" id="skillsList" data-animate></div>
+      </section>
+
+      <section class="section split" id="services" data-section>
+        <div class="section-title" data-animate>
+          <h2>🤝 How I help</h2>
+          <p>Flexible engagement models for teams that need momentum fast.</p>
+        </div>
+        <div class="service-grid" id="servicesList" data-animate></div>
+      </section>
+
+      <section class="section split" id="education" data-section>
+        <div class="section-title" data-animate>
+          <h2>🎓 Education</h2>
+          <p>Academic foundations.</p>
+        </div>
+        <div class="education-list" id="educationList" data-animate></div>
+      </section>
+
+      <section class="section contact" id="contact" data-section>
+        <div class="section-title" data-animate>
+          <h2>💡 Let's build something bold</h2>
+          <p>Available for fractional development leadership, product strategy, and growth launches.</p>
+        </div>
+        <div class="contact-grid" data-animate>
+          <div class="contact-item">
+            <p class="contact-label">✉️ Email</p>
+            <a id="profileEmail" href="#" class="contact-value">hello@example.com</a>
+          </div>
+          <div class="contact-item">
+            <p class="contact-label">☎️ Phone</p>
+            <span id="profilePhone" class="contact-value"></span>
+          </div>
+          <div class="contact-item">
+            <p class="contact-label">🌐 Competitive view</p>
+            <div class="social-dropdown">
+              <button class="dropdown-toggle" id="socialToggle">
+                Select 🔗 
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-menu" id="socialMenu"></div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem;">
+          <button class="button ghost" id="downloadContactBtn" style="font-size: 1rem;">⬇️ Download Contact</button>
+          <button class="button" id="openContactForm" style="font-size: 1rem;">📤 Send Message</button>
+        </div>
+      </section>
+
+      <section class="empty-state" id="emptyState" hidden>
+        <h2>Portfolio is waiting for your data</h2>
+        <p>Add your profile details to populate this page.</p>
+      </section>
+    </main>
+
+    <div class="modal-overlay" id="highlightsModal" aria-hidden="true">
+      <div class="modal">
+        <canvas id="highlightsCanvas" aria-hidden="true"></canvas>
+        <button class="modal-close" id="highlightsModalClose" type="button" aria-label="Close highlights">
+          Close
+        </button>
+        <div class="modal-content">
+          <h3>✨ More highlights</h3>
+          <ul class="modal-list" id="highlightsModalList"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="contactFormModal" aria-hidden="true">
+      <div class="modal contact-modal">
+        <button class="modal-close" id="contactFormClose" type="button" aria-label="Close form">
+          Close
+        </button>
+        <div class="modal-content">
+          <h3>💌 Let's Connect</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="contactName" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="contactEmail" placeholder="Your email" required />
+            </div>
+            <div class="form-group">
+              <textarea id="contactMessage" placeholder="Your message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="button button-small">📤 Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p class="made-with-love">Made with ❤️ and 😊</p> <span>© 2026 Amrita Ranjan   @PersonalFolio.</span>
+    </footer>
+
+    <script>
+      window.__PROFILE_DATA__ = null;
+      window.__PROFILE_SOURCE__ = "api";
+    </script>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
