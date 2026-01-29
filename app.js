@@ -619,7 +619,7 @@ TEL:${profile.phone || '+91-7547000491'}
 ADR:;;${profile.location || 'Pune, India'};;;;
 ORG:${profile.role || 'Software Engineer x Gen AI'}
 TITLE:${profile.role || 'Software Engineer x Gen AI'}
-URL:${profile.website || 'https://harshkumar-personalfolio.netlify.app/'}
+URL:${profile.website || 'https://amrita-ranjan-portfolio.onrender.com'}
 NOTE:${profile.tagline || 'Entry-level Software Dev with a Data-driven mindset and hands-on ML experience.'}
 END:VCARD`;
 
